@@ -1,0 +1,33 @@
+name: Docs / writing
+description: A paper, report section or doc to write, review or revise.
+title: "[Docs] "
+labels: ["documentation"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of work
+      options:
+        - Write a new section
+        - Review / proofread
+        - Revise after feedback
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Document or section
+      description: A link or the section name.
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: What to cover, the feedback to address, or what to check.
+  - type: input
+    id: due
+    attributes:
+      label: Due date
+      placeholder: YYYY-MM-DD

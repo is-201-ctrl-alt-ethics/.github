@@ -1,0 +1,23 @@
+name: Task
+description: A piece of work to get done.
+title: "[Task] "
+labels: ["task"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What needs doing
+      description: Describe the work and what "done" looks like.
+    validations:
+      required: true
+  - type: textarea
+    id: checklist
+    attributes:
+      label: Subtasks
+      placeholder: |
+        - [ ] ...
+  - type: input
+    id: due
+    attributes:
+      label: Due date
+      placeholder: YYYY-MM-DD

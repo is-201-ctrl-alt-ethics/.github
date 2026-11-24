@@ -1,0 +1,23 @@
+name: Feature request
+description: Suggest a new feature or an improvement.
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or need
+      description: Who needs this and why?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+  - type: textarea
+    id: ethics
+    attributes:
+      label: Ethical considerations
+      description: Privacy, fairness, accessibility, data handling or other concerns this raises.
